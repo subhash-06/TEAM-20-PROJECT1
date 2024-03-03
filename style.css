@@ -1,0 +1,161 @@
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 30%;
+    min-height: 100%;
+    opacity: 105%;
+    z-index: -2;
+}
+
+.animated-text {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+
+}
+
+.items {
+    display: flex;
+    float: left;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+
+}
+
+.items a img {
+    transition: transform 0.3s;
+}
+
+.items:hover img {
+    transform: scale(1.2);
+}
+
+.animated-text:hover {
+    transform: scale(1.4);
+}
+
+.dot {
+    height: 700px;
+    width: 700px;
+    background-color: #bbb;
+    border-radius: 400%;
+    opacity: 60%;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+#biriyani {
+    width: 425px;
+}
+
+#mughal {
+    width: 350px;
+    position: relative;
+    margin-bottom: 180px;
+    z-index: -1;
+}
+
+#zafrani {
+    position: relative;
+    width: 460px;
+    margin-top: 80px;
+    z-index: -2;
+    margin-left: -100px;
+}
+
+#jack {
+    position: relative;
+    margin-top: -30px;
+    width: 367px;
+    margin-right: 10px;
+    z-index: -3;
+}
+
+
+
+#png {
+    width: 320px;
+
+}
+
+
+#click-message {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 53px;
+    width: 100%;
+    font-size: 35px;
+    padding: 10px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: dance 2s ease-in-out infinite;
+
+}
+
+span {
+    animation: color-change-biriyani 5s infinite;
+}
+
+@keyframes color-change-biriyani {
+    0% {
+        color: rgb(212, 73, 4);
+    }
+
+    25% {
+        color: rgb(34, 159, 17);
+    }
+
+    100% {
+        color: rgb(212, 73, 4);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: rgb(245, 248, 248);
+    }
+
+    25% {
+        color: rgb(0, 0, 0);
+    }
+
+    100% {
+        color: rgb(245, 248, 248);
+    }
+}
+
+@keyframes dance {
+    0% {
+        transform: translateX(0);
+        color: rgb(245, 248, 248);
+    }
+
+    50% {
+        transform: translateX(50px);
+        color: rgb(0, 0, 0);
+
+    }
+
+    100% {
+        transform: translateX(0);
+        color: rgb(245, 248, 248);
+
+    }
+}
